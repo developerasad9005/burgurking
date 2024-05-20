@@ -1,5 +1,5 @@
 document.getElementById("submit").addEventListener("click", function () {
-    // const date = document.getElementById("date").value;
+    const date = document.getElementById("date").value;
     let firstPrizecount = document.getElementById('firstPrize').value;
     let secondPrizecount = document.getElementById('secondPrize').value;
     let thirdPrizecount = document.getElementById('thirdPrize').value;
@@ -40,7 +40,7 @@ document.getElementById("submit").addEventListener("click", function () {
     document.getElementById("fourthPrizeChange").innerText = fourthPrize;
     document.getElementById("fivePrizeChange").innerText = fivePrize;
     document.getElementById("sixPrizeChange").innerText = sixPrize;
-    // document.getElementById("dateChange").innerText = date;
+    document.getElementById("dateChange").innerText = date;
     //   document.getElementById("exDateChange").innerText = exDate;
     document.getElementById("subtotalChange").innerText = subTotalResult;
     document.getElementById("taxoneChange").innerText = tax1;
