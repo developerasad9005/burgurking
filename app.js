@@ -6,6 +6,7 @@ document.getElementById("submit").addEventListener("click", function () {
     let fourthPrizecount = document.getElementById('fourthPrize').value;
     let fivePrizecount = document.getElementById('fivePrize').value;
     let sixPrizecount = document.getElementById('sixPrize').value;
+    let sevenPrizecount = document.getElementById('sevenPrize').value;
     
     let firstPrize = parseInt(firstPrizecount) + 1;
 
@@ -13,39 +14,45 @@ document.getElementById("submit").addEventListener("click", function () {
     let thirdPrize = parseInt(thirdPrizecount) + 1;
     let fourthPrize = parseInt(fourthPrizecount) + 1;
     let fivePrize = parseInt(fivePrizecount) + 1;
-    let sixPrize = parseInt(sixPrizecount) + 1;
+    let sixPrize = parseInt(sixPrizecount);
+    let sevenPrize = parseInt(sevenPrizecount) + 1;
     document.getElementById('firstPrize').value = firstPrize;
     document.getElementById('secondPrize').value = secondPrize;
     document.getElementById('thirdPrize').value = thirdPrize;
     document.getElementById('fourthPrize').value = fourthPrize;
     document.getElementById('fivePrize').value = fivePrize;
     document.getElementById('sixPrize').value = sixPrize;
+    document.getElementById('sevenPrize').value = sevenPrize;
     
     
-    
-    const subtotal = firstPrize + secondPrize + thirdPrize + fourthPrize + fivePrize + sixPrize;
+    console.log(sevenPrize);
+    const subtotal = firstPrize + secondPrize + thirdPrize + fourthPrize + fivePrize + sixPrize + sevenPrize;
 
-    console.log(subtotal);
     let subTotalResult = parseFloat(subtotal.toFixed(2));
-    const tax1 = (subtotal * 8) / 100;
-    const tax2 = (subtotal * 2) / 100;
+    const tax1 = (subtotal * 7.950) / 100;
+    const tax2 = (subtotal * 1.650) / 100;
     // let taxresult = parseFloat(tax1.toFixed(2) + parseFloat(tax2.toFixed(2)));
-    let taxresult = tax1+tax2;
+    const tax1f =  parseFloat(tax1.toFixed(2))
+    const tax2f =  parseFloat(tax2.toFixed(2))
+    let taxresult = tax1f+tax2f;
     const total = subTotalResult + taxresult;
     let totalResult = total;
-   
+  
+
     document.getElementById('secoundPrizeChange').innerText = secondPrize;
     document.getElementById("firstPrizeChange").innerText = firstPrize;
     document.getElementById("thirdPrizeChange").innerText = thirdPrize;
     document.getElementById("fourthPrizeChange").innerText = fourthPrize;
     document.getElementById("fivePrizeChange").innerText = fivePrize;
     document.getElementById("sixPrizeChange").innerText = sixPrize;
+    document.getElementById("sevenPrizeChange").innerText = sevenPrize;
     document.getElementById("dateChange").innerText = date;
     //   document.getElementById("exDateChange").innerText = exDate;
     document.getElementById("subtotalChange").innerText = subTotalResult;
-    document.getElementById("taxoneChange").innerText = tax1;
-    document.getElementById("taxtwoChange").innerText = tax2;
+    document.getElementById("taxoneChange").innerText = tax1f;
+    document.getElementById("taxtwoChange").innerText = tax2f;
     document.getElementById("totalChange").innerText = totalResult;
+    document.getElementById("tendChange").innerText = totalResult;
     // document.getElementById("cashUpdate").innerText = cashPrize;
     // document.getElementById("changeUpdate").innerText = ChangePrizeRound;
     // document.getElementById("randomOrder").innerText = randomOrder;

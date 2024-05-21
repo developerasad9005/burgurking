@@ -9,18 +9,18 @@
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Madimi+One&display=swap');
+        
 
         * {
-            font-family: "Madimi One", sans-serif;
-            font-weight: 400;
-            font-style: norma
+            font-weight: 600;
+            font-style: normal;
+            font-family: arial;
         }
 
         .textareas h1 {
-            font-size: 21px;
+            font-size: 15px;
             line-height: 30px;
-            color: #5b6068;;
+            color: #4f4e53f5;;
             transform: rotate(-1deg);
         }
     </style>
@@ -60,6 +60,11 @@
                             <input
                                 class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
                                 type="number" name="sixPrize" id="sixPrize">
+                               
+                                <label class="font-semibold text-lg mt-3" for="date">seven Prize Prize</label>
+                                <input
+                                class="flex items-center h-12 px-4 w-64 bg-gray-200 mt-2 rounded focus:outline-none focus:ring-2 text-[#888181]"
+                                type="number" name="sevenPrize" id="sevenPrize">
                          
 
                             <label class="font-semibold text-lg mt-3" for="date">Date</label>
@@ -105,58 +110,68 @@
                         </h1>
                          <h1 class="font-semibold text-[21px] text-right absolute bottom-[467px] left-[455px] text-[#133253da]"><span id="nameUpdate">Asad</span>
                         </h1> --> 
-                   <div class="absolute bottom-[696px] left-[527px] textareas">
+                   <div class="absolute bottom-[575px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="firstPrizeChange">5</span>
+                            <h1 class="font-semibold text-right"><span id="firstPrizeChange">5</span>
                             </h1>
                         </div> 
-                        <div class="absolute bottom-[566px] left-[527px] textareas">
+                        <div class="absolute bottom-[561px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="secoundPrizeChange">10</span>
+                            <h1 class="font-semibold text-right"><span id="secoundPrizeChange">10</span>
                             </h1>
                         </div> 
-                        <div class="absolute bottom-[531px] left-[527px] textareas">
+                        <div class="absolute bottom-[546px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="thirdPrizeChange">15</span>
+                            <h1 class="font-semibold text-right"><span id="thirdPrizeChange">15</span>
                             </h1>
                         </div> 
-                        <div class="absolute bottom-[469px] left-[527px] textareas">
+                        <div class="absolute bottom-[530px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="fourthPrizeChange">20</span>
+                            <h1 class="font-semibold text-right"><span id="fourthPrizeChange">20</span>
                             </h1>
                         </div>
-                        <div class="absolute bottom-[335px] left-[527px] textareas">
+                        <div class="absolute bottom-[516px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="fivePrizeChange">25</span>
+                            <h1 class="font-semibold text-right"><span id="fivePrizeChange">25</span>
                             </h1>
                         </div>
-                        <div class="absolute bottom-[302px] left-[527px] textareas">
+                        <div class="absolute bottom-[500px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="sixPrizeChange">30</span>
+                            <h1 class="font-semibold text-right"><span id="sixPrizeChange">8</span>
                             </h1>
                         </div>
-                        <div class="absolute bottom-[243px] left-[527px] textareas">
+                        <div class="absolute bottom-[485px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="subtotalChange">30</span>
+                            <h1 class="font-semibold text-right"><span id="sevenPrizeChange">25</span>
                             </h1>
                         </div>
-                        <div class="absolute bottom-[207px] left-[527px] textareas">
+                        <div class="absolute bottom-[470px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="taxoneChange">30</span>
+                            <h1 class="font-semibold text-right"><span id="subtotalChange">30</span>
                             </h1>
                         </div>
-                        <div class="absolute bottom-[172px] left-[527px] textareas">
+                        <div class="absolute bottom-[455px] left-[327px] textareas">
 
-                            <h1 class="font-semibold text-right">$<span id="taxtwoChange">30</span>
+                            <h1 class="font-semibold text-right"><span id="taxoneChange">30</span>
                             </h1>
                         </div>
-                        <div class="absolute bottom-[110px] left-[379px] textareas">
+                        <div class="absolute bottom-[441px] left-[327px] textareas">
 
-                            <h1 class="font-bold  text-right"><span class="mr-[71px]" style="font-size: 25px !important;">Total =</span> $<span id="totalChange">30</span>
+                            <h1 class="font-semibold text-right"><span id="taxtwoChange">30</span>
                             </h1>
                         </div>
-                        <div class="absolute bottom-[50px] left-[380px]">
-                            <h1 class="text-[#6C6658] text-center text-[23px] -rotate-2"><span
+                        <div class="absolute bottom-[426px] left-[327px] textareas">
+
+                            <h1 class="font-bold  text-right"><span id="totalChange">30</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[411px] left-[327px] textareas">
+
+                            <h1 class="font-bold  text-right"><span id="tendChange">30</span>
+                            </h1>
+                        </div>
+                        <div class="absolute bottom-[317px] left-[78px]">
+                            <h1 class="text-[#403e43e6] text-center text-[17px]"><span
                                     id="dateChange">2024/02/08</span>
                                 <span id="timeChange">7:21 PM</span>
                             </h1>
